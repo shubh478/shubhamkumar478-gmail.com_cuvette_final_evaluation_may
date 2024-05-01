@@ -1,0 +1,149 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "DM Sans", sans-serif;
+  box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  padding: 3rem 3rem 5rem 3rem;
+}
+
+/* Close Icon */
+.closeIcon img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  /* Add any other styling you need */
+}
+.closeIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Title */
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 32.55px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+}
+
+/* Error Message */
+.error {
+  color: rgba(255, 14, 14, 1);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15.62px;
+  text-align: center;
+
+  margin-bottom: 10px;
+  margin-top: 4rem;
+}
+
+/* Form Group */
+.group {
+  margin-bottom: 20px;
+  position: relative; /* Add this line */
+  display: flex;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+/* Label */
+.label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.04px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input Field */
+.input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 1);
+
+  font-size: 14px;
+}
+
+/* Show Password Icon */
+img[src$="ShowPasswordIcon"] {
+}
+
+/* Submit Button */
+.button {
+  background-color: rgba(115, 171, 255, 1);
+  border-radius: 25px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: center;
+  padding: 10px 35px;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+}
+.passwordContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+.passwordContainer input {
+  border: none;
+  outline: none;
+  width: 80%;
+}
+.input::placeholder {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.62px;
+
+  color: rgba(142, 142, 142, 1);
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    padding: 2rem;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .group {
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-top: 2rem;
+  }
+
+  .input {
+    width: 90%;
+  }
+
+  .buttonContainer {
+    margin-top: 2rem;
+  }
+  .label {
+    text-align: left;
+  }
+  .passwordContainer {
+    margin-left: 0;
+  }
+}

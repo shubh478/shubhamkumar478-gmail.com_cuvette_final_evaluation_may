@@ -1,0 +1,86 @@
+.filterContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: auto; /* Use auto to only show scrollbar when necessary */
+  padding: 2rem; /* Adjust padding as needed */
+}
+
+.filterItem {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  margin-right: 3rem; /* Add margin between items */
+}
+
+.filterImage {
+  width: 20vw; /* Adjust the image size as needed */
+  height: 20vw;
+  cursor: pointer;
+}
+.filterText {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39.06px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.filterContainer::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.filterItem.selected {
+  border-color: blue; /* Change to your desired border color */
+  border: 5px solid rgba(0, 172, 210, 1);
+  border-radius: 57px;
+  cursor: pointer;
+}
+/* Media query for mobile view */
+@media (max-width: 480px) {
+  .filterContainer {
+    padding: 1rem; /* Reduce padding for mobile view */
+    justify-content: flex-start; /* Align items to the start */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    margin-bottom: 1rem; /* Add margin at the bottom */
+  }
+
+  .filterItem {
+    flex-shrink: 0; /* Prevent items from shrinking */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin-right: 1rem;
+  }
+
+  .filterImage {
+    width: 142.6px;
+    height: 95.15px;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0px;
+
+    cursor: pointer;
+  }
+  .filterText {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22.13px;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 1);
+  }
+  .filterItem.selected {
+    border-color: blue; /* Change to your desired border color */
+    border: 5px solid rgba(0, 172, 210, 1);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
